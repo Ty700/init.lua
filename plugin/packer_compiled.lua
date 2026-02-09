@@ -99,6 +99,18 @@ _G.packer_plugins = {
     path = "/home/tyler/.local/share/nvim/site/pack/packer/start/copilot.vim",
     url = "https://github.com/github/copilot.vim"
   },
+  ["gitsigns.nvim"] = {
+    config = { "\27LJ\2\n6\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\rgitsigns\frequire\0" },
+    loaded = true,
+    path = "/home/tyler/.local/share/nvim/site/pack/packer/start/gitsigns.nvim",
+    url = "https://github.com/lewis6991/gitsigns.nvim"
+  },
+  ["goto-preview"] = {
+    config = { "\27LJ\2\nn\0\0\3\0\4\0\v6\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\0016\0\0\0'\2\1\0B\0\2\0029\0\3\0B\0\1\1K\0\1\0\18close_all_win\28goto_preview_definition\17goto-preview\frequireX\1\2\b\0\b\0\n6\2\0\0009\2\1\0029\2\2\2'\4\3\0'\5\4\0003\6\5\0005\a\6\0=\0\a\aB\2\5\1K\0\1\0\vbuffer\1\0\1\vbuffer\0\0\t<CR>\6n\bset\vkeymap\bvim�\3\1\0\a\0\r\0\0186\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\4\0=\3\5\0023\3\6\0=\3\a\0025\3\n\0006\4\0\0'\6\b\0B\4\2\0029\4\t\4=\4\v\3=\3\f\2B\0\2\1K\0\1\0\15references\14telescope\1\0\1\14telescope\0\19lsp_references\22telescope.builtin\19post_open_hook\0\vborder\1\t\0\0\b╔\b═\b╗\b║\b╝\b═\b╚\b║\1\0\f\18focus_on_open\2\15references\0\20dismiss_on_move\1\vborder\0\vheight\3\30\nwidth\3�\1\16force_close\2\14bufhidden\twipe\fopacity\0\22resizing_mappings\1\21default_mappings\2\19post_open_hook\0\nsetup\17goto-preview\frequire\0" },
+    loaded = true,
+    path = "/home/tyler/.local/share/nvim/site/pack/packer/start/goto-preview",
+    url = "https://github.com/rmagatti/goto-preview"
+  },
   harpoon = {
     loaded = true,
     path = "/home/tyler/.local/share/nvim/site/pack/packer/start/harpoon",
@@ -113,6 +125,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/tyler/.local/share/nvim/site/pack/packer/start/mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
+  },
+  ["monokai-pro.nvim"] = {
+    loaded = true,
+    path = "/home/tyler/.local/share/nvim/site/pack/packer/start/monokai-pro.nvim",
+    url = "https://github.com/loctvl842/monokai-pro.nvim"
   },
   ["nvim-cmp"] = {
     loaded = true,
@@ -139,12 +156,6 @@ _G.packer_plugins = {
     path = "/home/tyler/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
   },
-  ["rose-pine"] = {
-    config = { "\27LJ\2\n9\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0\26colorscheme rose-pine\bcmd\bvim\0" },
-    loaded = true,
-    path = "/home/tyler/.local/share/nvim/site/pack/packer/start/rose-pine",
-    url = "https://github.com/rose-pine/neovim"
-  },
   ["telescope.nvim"] = {
     loaded = true,
     path = "/home/tyler/.local/share/nvim/site/pack/packer/start/telescope.nvim",
@@ -155,6 +166,11 @@ _G.packer_plugins = {
     path = "/home/tyler/.local/share/nvim/site/pack/packer/start/undotree",
     url = "https://github.com/mbbill/undotree"
   },
+  ["vim-flog"] = {
+    loaded = true,
+    path = "/home/tyler/.local/share/nvim/site/pack/packer/start/vim-flog",
+    url = "https://github.com/rbong/vim-flog"
+  },
   ["vim-fugitive"] = {
     loaded = true,
     path = "/home/tyler/.local/share/nvim/site/pack/packer/start/vim-fugitive",
@@ -163,10 +179,14 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
--- Config for: rose-pine
-time([[Config for rose-pine]], true)
-try_loadstring("\27LJ\2\n9\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0\26colorscheme rose-pine\bcmd\bvim\0", "config", "rose-pine")
-time([[Config for rose-pine]], false)
+-- Config for: gitsigns.nvim
+time([[Config for gitsigns.nvim]], true)
+try_loadstring("\27LJ\2\n6\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\rgitsigns\frequire\0", "config", "gitsigns.nvim")
+time([[Config for gitsigns.nvim]], false)
+-- Config for: goto-preview
+time([[Config for goto-preview]], true)
+try_loadstring("\27LJ\2\nn\0\0\3\0\4\0\v6\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\0016\0\0\0'\2\1\0B\0\2\0029\0\3\0B\0\1\1K\0\1\0\18close_all_win\28goto_preview_definition\17goto-preview\frequireX\1\2\b\0\b\0\n6\2\0\0009\2\1\0029\2\2\2'\4\3\0'\5\4\0003\6\5\0005\a\6\0=\0\a\aB\2\5\1K\0\1\0\vbuffer\1\0\1\vbuffer\0\0\t<CR>\6n\bset\vkeymap\bvim�\3\1\0\a\0\r\0\0186\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\4\0=\3\5\0023\3\6\0=\3\a\0025\3\n\0006\4\0\0'\6\b\0B\4\2\0029\4\t\4=\4\v\3=\3\f\2B\0\2\1K\0\1\0\15references\14telescope\1\0\1\14telescope\0\19lsp_references\22telescope.builtin\19post_open_hook\0\vborder\1\t\0\0\b╔\b═\b╗\b║\b╝\b═\b╚\b║\1\0\f\18focus_on_open\2\15references\0\20dismiss_on_move\1\vborder\0\vheight\3\30\nwidth\3�\1\16force_close\2\14bufhidden\twipe\fopacity\0\22resizing_mappings\1\21default_mappings\2\19post_open_hook\0\nsetup\17goto-preview\frequire\0", "config", "goto-preview")
+time([[Config for goto-preview]], false)
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then
