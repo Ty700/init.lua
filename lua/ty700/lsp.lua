@@ -1,17 +1,15 @@
--- LSP Configuration
-
 -- Setup Mason
 require("mason").setup()
 require("mason-lspconfig").setup({
-	ensure_installed = {
-		"clangd",
-		"html",
-		"cssls",
-		"ts_ls",
-		"jdtls",
-		"pyright",
-		"lua_ls"
-	},
+    ensure_installed = {
+        "clangd",
+        "html",
+        "cssls",
+        "ts_ls",
+        "jdtls",
+        "pyright",
+        "lua_ls"
+    },
 })
 
 -- Configure LSP
@@ -20,11 +18,11 @@ local capabilities = require('cmp_nvim_lsp').default_capabilities()
 
 -- C/C++
 lspconfig.clangd.setup({
-	cmd = {'clangd', '--background-index', '--clang-tidy', '--log=verbose'},
-	capabilities = capabilities,
-	init_options = {
-		fallbackFlags = { '-std=c++17' },
-	},
+    cmd = { 'clangd', '--background-index', '--clang-tidy', '--log=verbose' },
+    capabilities = capabilities,
+    init_options = {
+        fallbackFlags = { '-std=c++17' },
+    },
 })
 
 -- HTML
@@ -57,3 +55,9 @@ lspconfig.lua_ls.setup({
     capabilities = capabilities,
 })
 
+-- Swift 
+lspconfig.sourcekit.setup({
+    capabilities = capabilities,
+    cmd = { 'xcrun', 'sourcekit-lsp' },
+    filetypes = { 'swift', 'objective-c', 'objective-cpp' },
+})

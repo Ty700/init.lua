@@ -1,3 +1,4 @@
+require("ty700.packer")
 require("ty700.remap")
 require("ty700.set")
 require("ty700.lsp") 
