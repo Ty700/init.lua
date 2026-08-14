@@ -1,7 +1,6 @@
-require("ty700.packer")
+require("ty700.lazy")
 require("ty700.remap")
 require("ty700.set")
-require("ty700.lsp") 
 
 local augroup = vim.api.nvim_create_augroup
 local autocmd = vim.api.nvim_create_autocmd
