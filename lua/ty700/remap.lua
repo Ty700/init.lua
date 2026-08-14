@@ -60,7 +60,9 @@ vim.keymap.set('i', '<C-\\>', '<Plug>(copilot-dismiss)')
 vim.keymap.set('n', '<leader>gs', vim.cmd.Git, { desc = 'Git status' })
 vim.keymap.set('n', '<leader>gl', ':Flog<CR>', { desc = 'Git log graph' })
 vim.keymap.set('n', '<leader>gL', ':Flog -all<CR>', { desc = 'Git log all branches' })
-vim.keymap.set('n', '<leader>gf', ':Flog -path=%<CR>', { desc = 'File history' })
+-- NOTE: was <leader>gf, but that collides with telescope's git_files bind
+-- (<leader>gf = "git files" there); moved to <leader>gh ("git history")
+vim.keymap.set('n', '<leader>gh', ':Flog -path=%<CR>', { desc = 'File history' })
 
 vim.keymap.set('n', 'gp', require('goto-preview').goto_preview_definition, opts)
 vim.keymap.set('n', 'gP', require('goto-preview').close_all_win, opts)
